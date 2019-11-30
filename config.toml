@@ -1,0 +1,7 @@
+baseURL = "http://docs.adagio.run/"
+languageCode = "en-gb"
+title = "Adagio"
+
+[params]
+  BookLogo = "/logo.png"
+  BookMenuBundle = "/menu"
