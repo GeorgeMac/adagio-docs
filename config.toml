@@ -1,6 +1,7 @@
 baseURL = "http://docs.adagio.run/"
 languageCode = "en-gb"
 title = "Adagio"
+theme = "book"
 
 [params]
   BookLogo = "/logo.png"
