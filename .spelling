@@ -1,0 +1,20 @@
+# markdown-spellcheck spelling configuration file
+# Format - lines beginning # are comments
+# global dictionary is at the start, file overrides afterwards
+# one word per line, to define a file override use ' - filename'
+# where filename is relative to this configuration file
+IPC
+protobuf
+gRPC
+json
+javascript
+ - content/_index.md
+datastore
+ - content/docs/overview.md
+LR
+0f0
+000
+f00
+fff
+args
+spec

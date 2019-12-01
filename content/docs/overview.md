@@ -75,7 +75,7 @@ One process could spawn multiple agents e.g. in separate go routines. This can b
 an agent count of two or more.
 
 When a workflow is instantiated (started) it becomes known as a *run*. Workers are notified of the nodes within the workflow run.
-In particular, they are notified of the ready nodes. Initiality these are the nodes within the graph with no inbound edges.
+In particular, they are notified of the ready nodes. Initially these are the nodes within the graph with no inbound edges.
 
 {{< mermaid >}}
 graph LR;
@@ -95,7 +95,7 @@ Agents consume nodes, not workflow runs. This allows for execution of a workflow
 An agent will only claim nodes which it can execute. This is decided based on the nodes specification runtime property.
 If the agent has a function definition associated for the runtime it can execute it. Given this is the case it attempts to make a *claim*.
 
-Only one agent can successfuly make a claim for a node. This is how we ensure nodes are executed by only one worker at a time.
+Only one agent can successfully make a claim for a node. This is how we ensure nodes are executed by only one worker at a time.
 Once the work has been performed the result is recorded, the graph state is updated in the database and any _newly ready_ nodes
 are communicated with listening agents.
 
@@ -117,7 +117,7 @@ The control plane is the entry point to get work done. It exposes a number of AP
 in the system, list available agents (for introspection purposes), inspect individual runs or just to get high level statistics on the overall counts
 of runs, nodes and their states within the cluster.
 
-It is exposed as a gRPC API, however, there is a prebuilt json API gateway which can be deployed and communicated with the gRPC one. This API comes
+It is exposed as a gRPC API, however, there is a pre-built json API gateway which can be deployed and communicated with the gRPC one. This API comes
 with an accompanying swagger specification. This has been used to generate the javascript client used within the adagio UI.
 
 The control plane API is designed to serve your cluster consumers who need to execute workflows.

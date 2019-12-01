@@ -11,7 +11,7 @@ type: docs
 
 ## Distributed
 
-Adagio is built to be destributed. At its heart adagio is a library that enforces a protocol of collaboration via some backing datastore. This allows for multiple instances of agents to scale horizontally whilst consuming work.
+Adagio is built to be distributed. At its heart adagio is a library that enforces a protocol of collaboration via some backing datastore. This allows for multiple instances of agents to scale horizontally whilst consuming work.
 
 <--->
 
