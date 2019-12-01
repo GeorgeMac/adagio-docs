@@ -1,4 +1,4 @@
-baseURL = "http://docs.adagio.run/"
+baseURL = "https://docs.adagio.run/"
 languageCode = "en-gb"
 title = "Adagio"
 theme = "book"
